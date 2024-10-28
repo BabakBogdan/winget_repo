@@ -1,0 +1,24 @@
+PackageIdentifier: Apptimized.Audacity
+ManifestType: singleton
+ManifestVersion: 1.0.0
+PackageVersion: 3.6.4
+PackageLocale: en-US
+
+# Required fields at the root level
+Publisher: Apptimized                           # Publisher name
+PackageName: Audacity                           # Name of the package
+ShortDescription: Free, open source, cross-platform audio software.  # Short description
+License: GPL                                    # License type
+Description: Audacity is a free, open-source, cross-platform audio software.
+
+# The Installers section must be included directly under the root level
+Installers:
+  - Architecture: x64                           # Use x64 for 64-bit
+    InstallerType: exe                          # InstallerType value
+    InstallerUrl: https://www.dropbox.com/scl/fi/p4b9exp4rvihycp2c1nn4/audacity-win-3.6.4-32bit.exe?rlkey=8x32xqsjttoy9cul1fmu7a4oy&st=oa4lypkp&dl=1
+    InstallerSha256: DCC10DF1E55D2DB753A2D4E29FB7FAD7018352A035FA72CE91B052E8EC317C38  # SHA256 hash
+    Scope: machine                               # Installation scope
+
+    # Installation commands
+    Commands:
+      - audacity-win-3.6.4-32bit.exe /VERYSILENT  # Installation command
